@@ -1,23 +1,32 @@
-// 1. create buttons
+// create inital topic array
 
 var topicsArray = ['Cat', 'Dog', 'Baby', 'Chicken'];
 
+// create buttons from array list
 function renderButtons() {
+  //empty all the buttons before start to prevent duplicate
   $('#buttons').empty();
+  //for loops to auto create buttons according to the number of array
   for (var i = 0; i < topicsArray.length; i++) {
+    // set the button element
     var newButton = $('<button>');
+    // add the text to the buttons
     newButton.text(topicsArray[i]);
+    // add class to the button and color of green
     newButton.addClass('btn btn-success');
+    // add attribute data for later use
     newButton.attr('data-topic', topicsArray[i]);
+    // appedn the button to html
     $('#buttons').append(newButton);
   }
 
-  // 2. on click function get the still gifs
+  // on click function get the still gifs
 
   $('.btn').on('click', function() {
-    // 3. set Api request
+    // set Api request
 
     var apiKey = 'O7LsU4jmuzvBBrDHUruHzED8Bsspqotn';
+    //the search request equal to the user click data topic value
     var searchQ = $(this).attr('data-topic');
     var queryURL = 'https://api.giphy.com/v1/gifs/search?api_key=' + apiKey + '&q=' + searchQ + '&limit=10&rating=g&lang=en';
 
@@ -25,7 +34,7 @@ function renderButtons() {
       url: queryURL,
       method: 'GET'
     }).then(function(response) {
-      // console.log(response);
+      // empty the gif element to prevent duplicate by multiple click
       $('#gifTags').empty();
       for (var i = 0; i < 10; i++) {
         var imageUrl = response.data[i].images.fixed_height_still.url;
