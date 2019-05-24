@@ -4,7 +4,7 @@
 
 - [General info](#general-info)
 - [Technologies](#technologies)
-- [Setup](#setup)
+- [Deployment](#Deployment)
 - [Code Overview](#Code-Overview)
 
 ## General info
@@ -17,16 +17,16 @@ This is an apps allow user to search on Gifs image by clicking dynamic created b
 
 Project is created with:
 
-- JavaScript ES6
+- JavaScript 
 - JQuery
 - Bootstrap
 - HTML 5 & CSS 3
 
-## Setup
+## Deployment
 
-To run this project, download entier package and open it in web browser or
+- Live link: https://elvykiung.github.io/GifTastic/
+- Portfolio link: https://elvykiung.github.io/
 
-Clone this repo to your desktop and run npm install to install all the dependencies.
 
 ## Code Overview
 
@@ -38,4 +38,4 @@ Clone this repo to your desktop and run npm install to install all the dependenc
 
 3. Using Jquery ajax method to get Gifty API call
 
-### JavaScript Function explain
+
