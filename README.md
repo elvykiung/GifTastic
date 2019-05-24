@@ -11,7 +11,7 @@
 
 This is an apps allow user to search on Gifs image by clicking dynamic created buttoms.
 
-![Image](image/final_look.png)
+![screenshot](https://github.com/elvykiung/GifTastic/blob/master/image/Screen%20Recording%202019-05-24%20at%2012.07.57.80%20PM.gif?raw=true)
 
 ## Technologies
 
